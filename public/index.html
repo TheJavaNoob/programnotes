@@ -1,5 +1,113 @@
 <html>
 <head>
-    <script src
+    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
 </head>
+<body>
+    <div class="header">
+        <div class="header-title">
+            <h1>ProgramNotes音迅</h1>
+            <button id="infoButton" class="navigation-button"><img src="image/info.png" alt="info" width="30px" height="30px"></button>
+            <a class="navigation-button" href="/index.html"><img src="image/home.png" alt="home" width="30px" height="30px"></a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="configurations">
+            <form>
+                <div class="configurations-time">
+                    <p>日期:&nbsp;</p>
+                    <input type="date" id="fromTime" name="fromTime" required>
+                    <p>&nbsp;-&nbsp;</p>
+                    <input type="date" id="toTime" name="toTime" required>
+                </div>
+                <div class="configurations-locations">
+                    <div class="dropdown dropdown-active">
+                        <div class="dropdown-title">
+                            <p>地点 </p>
+                            <span class="dropdown-icon">-</span>
+                        </div>
+                        <ul style="display: none;">
+                            <li>
+                                <input type="checkbox" id="location1" name="location1" value="location1">
+                                <label for="location1">广州</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="location2" name="location2" value="location2">
+                                <label for="location2">上海</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="configurations-organization">
+                    <div class="dropdown dropdown-active">
+                        <div class="dropdown-title">
+                            <p>组织 </p>
+                            <span class="dropdown-icon">-</span>
+                        </div>
+                        <ul style="display: none;">
+                            <li>
+                                <input type="checkbox" id="organzation1" name="organzation1" value="organzation1">
+                                <label for="location1">广州交响乐团</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="organzation2" name="organzation2" value="organzation2">
+                                <label for="location2">上海交响乐团</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="configurations-composers">
+                    <div class="dropdown dropdown-active">
+                        <div class="dropdown-title">
+                            <p>作曲家 </p>
+                            <span class="dropdown-icon">-</span>
+                        </div>
+                        <ul style="display: none;">
+                            <li>
+                                <input type="checkbox" id="composer1" name="composer1" value="composer1">
+                                <label for="location1">贝多芬</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="composer2" name="composer2" value="composer2">
+                                <label for="location2">勃拉姆斯</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="content">
+            <!--div class="content-title">
+                <h2>音乐会</h2>
+            </div-->
+            <div class="content-list">
+                <div class="content-item">
+                    <div class="content-item-image">
+                        <img src="image/concert1.jpg" alt="concert1" width="200px" height="200px">
+                    </div>
+                    <div class="content-item-info">
+                        <h3>2024年1月1日</h3>
+                        <p>广州音乐厅</p>
+                        <p>贝多芬</p>
+                        <a href="">公众号></a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-item-image">
+                        <img src="image/concert2.jpg" alt="concert2" width="200px" height="200px">
+                    </div>
+                    <div class="content-item-info">
+                        <h3>2024年1月2日</h3>
+                        <p>上海音乐厅</p>
+                        <p>勃拉姆斯</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+		<p>© 2024 Steve Lin. All rights reserved.</p>
+		<p>Powered by Original HTML and CSS</p>
+	</div>
+</body>
 </html>

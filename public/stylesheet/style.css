@@ -1,0 +1,172 @@
+@media screen and (orientation: portrait) {
+	.header{
+		flex-direction: column;
+	}
+	body{
+		padding: 0;
+	}
+	.yearLabel{
+		transform: translateX(-50%);
+	}
+}
+@media screen and (orientation: landscape) {
+	body{
+		padding: 1em;
+	}
+	#nameInputBox{
+		align-self: flex-end;
+	}
+	.configurations{
+		width: 20%;
+	}
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: #333;
+	color: #fff;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	/* This will push the h1 to the left and the input box to the right */
+	align-items: center;
+	padding-bottom: 1em;
+	border-bottom: #aaa 1px solid;
+}
+
+.header-title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+h1 {
+	text-align: left;
+	color: #fff;
+	margin: 0;
+}
+
+.navigation-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin-left: 1em;
+	filter: brightness(1.2);
+}
+
+.navigation-button:hover {
+	filter: brightness(1.5);
+}
+
+.body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.configurations{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	border-right: #aaa 1px solid;
+}
+
+.configurations-time {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.configurations-time input{
+	height: 2em;
+}
+
+.dropdown {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+
+.dropdown-title{
+	display: flex;
+	width: 100%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin: 0;
+	margin-top: 1em;
+	border-top: #aaa 1px solid;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dropdown-title:hover{
+	background-color: #555;
+}
+
+.dropdown-title p{
+	display: flex;
+	margin: 0;
+}
+
+.dropdown-icon{
+	margin-right: 2em;
+}
+
+.dropdown-active .dropdown-icon{
+	content: "-";
+}
+
+.dropdown ul{
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown-active ul{
+    display: block !important;
+}
+
+.dropdown li{
+	list-style: none;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 1em;
+}
+
+.content-list{
+	display: flex;
+	flex-direction: column;
+}
+
+.content-item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.5em;
+	border-bottom: #aaa 1px solid;
+}
+
+.content-item-info{
+	margin-left: 1em;
+	flex-grow: 1;
+}
+
+.content-item-info a{
+	color: #fff;
+}
+
+.footer{
+    border-top: #aaa 1px solid;
+}
