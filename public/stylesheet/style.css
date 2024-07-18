@@ -122,6 +122,7 @@ h1 {
 
 .dropdown-active .dropdown-icon{
 	content: "-";
+
 }
 
 .dropdown ul{
@@ -158,12 +159,17 @@ h1 {
 	border-bottom: #aaa 1px solid;
 }
 
-.content-item-info{
+.content-item-middle{
 	margin-left: 1em;
 	flex-grow: 1;
 }
 
-.content-item-info a{
+.content-item-right{
+	margin-left: 1em;
+	flex-grow: 1;
+}
+
+.content-item a{
 	color: #fff;
 }
 
